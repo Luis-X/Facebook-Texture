@@ -1,0 +1,38 @@
+PODS:
+  - AsyncDisplayKit (2.0.2):
+    - AsyncDisplayKit/PINRemoteImage (= 2.0.2)
+  - AsyncDisplayKit/Core (2.0.2)
+  - AsyncDisplayKit/PINRemoteImage (2.0.2):
+    - AsyncDisplayKit/Core
+    - PINRemoteImage/iOS (= 3.0.0-beta.7)
+    - PINRemoteImage/PINCache
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - PINCache (3.0.1-beta.2):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.2)
+    - PINCache/Core (= 3.0.1-beta.2)
+  - PINCache/Arc-exception-safe (3.0.1-beta.2):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.2)
+  - PINRemoteImage/Core (3.0.0-beta.7)
+  - PINRemoteImage/iOS (3.0.0-beta.7):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.7):
+    - PINCache (= 3.0.1-beta.2)
+    - PINRemoteImage/Core
+
+DEPENDENCIES:
+  - AsyncDisplayKit (~> 2.0-beta.1)
+  - Masonry (~> 1.0.1)
+  - MBProgressHUD (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  AsyncDisplayKit: 5c22daa1499c530fcc3e5589ddb201bf1176842b
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  PINCache: 6d273a6e0754bd26e3f12a38a90dde73cc6a42b2
+  PINRemoteImage: ff63baf185088530db6cfa41cb665e2b5126b5c3
+
+PODFILE CHECKSUM: 1558da9d38d626044e5cf06171df6d6769f43777
+
+COCOAPODS: 1.2.0
