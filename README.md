@@ -598,14 +598,14 @@ ASLayoutSpec的另一个用途是充当ASStackLayoutSpec中的其他子元素，
 
 | 属性                       | 类型                          | 描述                                       |
 | :----------------------- | :-------------------------- | :--------------------------------------- |
-| **.style.spacingBefore** | **CGFloat **                | 在堆叠方向上放置此对象之前的额外空间。                      |
-| **.style.spacingAfter**  | **CGFloat **                | 在堆叠方向上放置此对象之后的额外空间。                      |
+| **.style.spacingBefore** | **CGFloat**                | 在堆叠方向上放置此对象之前的额外空间。                      |
+| **.style.spacingAfter**  | **CGFloat**                | 在堆叠方向上放置此对象之后的额外空间。                      |
 | **.style.flexGrow**      | **BOOL**                    | 如果子元素的堆叠大小的总和小于最小大小，那么这个对象是否增长？          |
-| **.style.flexShrink**    | **BOOL **                   | 如果子元素的堆叠大小的总和大于最大大小，那么这个对象是否缩小？          |
+| **.style.flexShrink**    | **BOOL**                   | 如果子元素的堆叠大小的总和大于最大大小，那么这个对象是否缩小？          |
 | **.style.flexBasis**     | **ASDimension**             | 使用flexGrow或flexShrink属性并分配剩余空间之前，在堆栈维度（水平或垂直）中指定此对象的初始大小。 |
-| **.style.alignSelf**     | **ASStackLayoutAlignSelf ** | 沿着横轴的对象的方向，覆盖alignItems。(ASStackLayoutAlignSelfAuto，ASStackLayoutAlignSelfStart， ASStackLayoutAlignSelfEnd，  ASStackLayoutAlignSelfCenter，  ASStackLayoutAlignSelfStretch) |
-| **.style.ascender**      | **CGFloat **                | 用于基线对准。从对象的顶部到其基线的距离。                    |
-| **.style.descender**     | **CGFloat **                | 用于基线对准。从对象的底部部到其基线的距离                    |
+| **.style.alignSelf**     | **ASStackLayoutAlignSelf** | 沿着横轴的对象的方向，覆盖alignItems。(ASStackLayoutAlignSelfAuto，ASStackLayoutAlignSelfStart， ASStackLayoutAlignSelfEnd，  ASStackLayoutAlignSelfCenter，  ASStackLayoutAlignSelfStretch) |
+| **.style.ascender**      | **CGFloat**                | 用于基线对准。从对象的顶部到其基线的距离。                    |
+| **.style.descender**     | **CGFloat**                | 用于基线对准。从对象的底部部到其基线的距离                    |
 
 
 
@@ -613,7 +613,7 @@ ASLayoutSpec的另一个用途是充当ASStackLayoutSpec中的其他子元素，
 
 | 属性                        | 类型           | 描述                                      |
 | :------------------------ | :----------- | :-------------------------------------- |
-| **.style.layoutPosition** | **CGPoint ** | 该对象在ASAbsoluteLayoutSpec父规则中的CGPoint位置。 |
+| **.style.layoutPosition** | **CGPoint** | 该对象在ASAbsoluteLayoutSpec父规则中的CGPoint位置。 |
 
 
 
@@ -627,9 +627,9 @@ ASLayoutSpec的另一个用途是充当ASStackLayoutSpec中的其他子元素，
 | **.style.maxHeight**           | **ASDimension**  | 如果子元素的堆栈大小的总和大于最大大小，那么这个对象是否应该缩小呢？       |
 | **.style.minWidth**            | **ASDimension**  | 设置元素的最小宽度。它防止width属性的使用值变得小于为minWidth指定的值。 minWidth的值覆盖maxWidth和width。默认为ASDimensionAuto |
 | **.style.maxWidth**            | **ASDimension**  | 设置元素的最大宽度。 它防止width属性的使用值变得大于为maxWidth指定的值。 maxWidth的值覆盖width，但minWidth覆盖maxWidth。默认为ASDimensionAuto |
-| **.style.preferredSize**       | **CGSize **      | 提供布局元素的建议大小。 如果提供了可选的minSize或maxSize，且preferredSize超过这些，则将强制执行minSize或maxSize, 如果未提供此可选值，则布局元素的大小将默认为其提供的内在内容大小calculateSizeThatFits： |
-| **.style.minSize**             | **CGSize **      |                                          |
-| **.style.maxSize**             | **CGSize **      |                                          |
+| **.style.preferredSize**       | **CGSize**      | 提供布局元素的建议大小。 如果提供了可选的minSize或maxSize，且preferredSize超过这些，则将强制执行minSize或maxSize, 如果未提供此可选值，则布局元素的大小将默认为其提供的内在内容大小calculateSizeThatFits： |
+| **.style.minSize**             | **CGSize**      |                                          |
+| **.style.maxSize**             | **CGSize**      |                                          |
 | **.style.preferredLayoutSize** | **ASLayoutSize** |                                          |
 | **.style.minLayoutSize**       | **ASLayoutSize** |                                          |
 | **.style.maxLayoutSize**       | **ASLayoutSize** |                                          ...|
