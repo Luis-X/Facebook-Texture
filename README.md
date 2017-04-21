@@ -1,6 +1,13 @@
-![AsyncDisplaykit2.0](http://upload-images.jianshu.io/upload_images/1519620-6b512789b569e61a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+# Example
+
+![AsyncDisplaykit2.0使用](http://upload-images.jianshu.io/upload_images/1519620-95e102cb835aa438.gif?imageMogr2/auto-orient/strip)
+
+
 
 # 前言
+
+![AsyncDisplaykit2.0](http://upload-images.jianshu.io/upload_images/1519620-6b512789b569e61a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 AsyncDisplayKit是一个建立在UIKit基础上的iOS框架，让即使是最复杂的用户界面光滑和响应。它最初建成Facebook的Paper应用，并与流行的[pop](https://github.com/facebook/pop)基于物理的动画相辅相成——它与UIKit动力学和传统应用程序的设计同样强大。最近，它是用于Pinterest应用的重写。
 
@@ -596,13 +603,13 @@ ASLayoutSpec的另一个用途是充当ASStackLayoutSpec中的其他子元素，
 
 ### 十四、ASStackLayoutElement Properties（堆叠布局元素属性）
 
-| 属性                       | 类型                          | 描述                                       |
-| :----------------------- | :-------------------------- | :--------------------------------------- |
+| 属性                       | 类型                         | 描述                                       |
+| :----------------------- | :------------------------- | :--------------------------------------- |
 | **.style.spacingBefore** | **CGFloat**                | 在堆叠方向上放置此对象之前的额外空间。                      |
 | **.style.spacingAfter**  | **CGFloat**                | 在堆叠方向上放置此对象之后的额外空间。                      |
-| **.style.flexGrow**      | **BOOL**                    | 如果子元素的堆叠大小的总和小于最小大小，那么这个对象是否增长？          |
+| **.style.flexGrow**      | **BOOL**                   | 如果子元素的堆叠大小的总和小于最小大小，那么这个对象是否增长？          |
 | **.style.flexShrink**    | **BOOL**                   | 如果子元素的堆叠大小的总和大于最大大小，那么这个对象是否缩小？          |
-| **.style.flexBasis**     | **ASDimension**             | 使用flexGrow或flexShrink属性并分配剩余空间之前，在堆栈维度（水平或垂直）中指定此对象的初始大小。 |
+| **.style.flexBasis**     | **ASDimension**            | 使用flexGrow或flexShrink属性并分配剩余空间之前，在堆栈维度（水平或垂直）中指定此对象的初始大小。 |
 | **.style.alignSelf**     | **ASStackLayoutAlignSelf** | 沿着横轴的对象的方向，覆盖alignItems。(ASStackLayoutAlignSelfAuto，ASStackLayoutAlignSelfStart， ASStackLayoutAlignSelfEnd，  ASStackLayoutAlignSelfCenter，  ASStackLayoutAlignSelfStretch) |
 | **.style.ascender**      | **CGFloat**                | 用于基线对准。从对象的顶部到其基线的距离。                    |
 | **.style.descender**     | **CGFloat**                | 用于基线对准。从对象的底部部到其基线的距离                    |
@@ -611,8 +618,8 @@ ASLayoutSpec的另一个用途是充当ASStackLayoutSpec中的其他子元素，
 
 ### 十五、ASAbsoluteLayoutElement Properties（绝对布局元素属性）
 
-| 属性                        | 类型           | 描述                                      |
-| :------------------------ | :----------- | :-------------------------------------- |
+| 属性                        | 类型          | 描述                                      |
+| :------------------------ | :---------- | :-------------------------------------- |
 | **.style.layoutPosition** | **CGPoint** | 该对象在ASAbsoluteLayoutSpec父规则中的CGPoint位置。 |
 
 
@@ -627,21 +634,15 @@ ASLayoutSpec的另一个用途是充当ASStackLayoutSpec中的其他子元素，
 | **.style.maxHeight**           | **ASDimension**  | 如果子元素的堆栈大小的总和大于最大大小，那么这个对象是否应该缩小呢？       |
 | **.style.minWidth**            | **ASDimension**  | 设置元素的最小宽度。它防止width属性的使用值变得小于为minWidth指定的值。 minWidth的值覆盖maxWidth和width。默认为ASDimensionAuto |
 | **.style.maxWidth**            | **ASDimension**  | 设置元素的最大宽度。 它防止width属性的使用值变得大于为maxWidth指定的值。 maxWidth的值覆盖width，但minWidth覆盖maxWidth。默认为ASDimensionAuto |
-| **.style.preferredSize**       | **CGSize**      | 提供布局元素的建议大小。 如果提供了可选的minSize或maxSize，且preferredSize超过这些，则将强制执行minSize或maxSize, 如果未提供此可选值，则布局元素的大小将默认为其提供的内在内容大小calculateSizeThatFits： |
-| **.style.minSize**             | **CGSize**      |                                          |
-| **.style.maxSize**             | **CGSize**      |                                          |
+| **.style.preferredSize**       | **CGSize**       | 提供布局元素的建议大小。 如果提供了可选的minSize或maxSize，且preferredSize超过这些，则将强制执行minSize或maxSize, 如果未提供此可选值，则布局元素的大小将默认为其提供的内在内容大小calculateSizeThatFits： |
+| **.style.minSize**             | **CGSize**       |                                          |
+| **.style.maxSize**             | **CGSize**       |                                          |
 | **.style.preferredLayoutSize** | **ASLayoutSize** |                                          |
 | **.style.minLayoutSize**       | **ASLayoutSize** |                                          |
-| **.style.maxLayoutSize**       | **ASLayoutSize** |                                          ...|
+| **.style.maxLayoutSize**       | **ASLayoutSize** | ...                                      |
 
 
 
 ![](http://upload-images.jianshu.io/upload_images/1519620-ed4d838f20e55167.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-
-# Demo
-
-[Demo地址](https://github.com/Luis-X/AsyncDisplayKitStudy)
-
-![AsyncDisplaykit2.0使用](http://upload-images.jianshu.io/upload_images/1519620-95e102cb835aa438.gif?imageMogr2/auto-orient/strip)
