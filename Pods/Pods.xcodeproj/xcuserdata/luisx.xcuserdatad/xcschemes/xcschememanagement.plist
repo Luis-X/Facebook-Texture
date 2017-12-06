@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AsyncDisplayKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PINOperation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PINRemoteImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,25 +34,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Texture.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0D49D9D97A8C4AC2966105C526A0D6DB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>28992FD15BC1488B25D66CEF42182165</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3EB6BD6A35908E38B1B490F9DA89A4D1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>586F2DFA9BDCC6675C2546793A69E5CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7020FA468B15664DBD673D04AD8E5C33</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FCECB7EA61427BAF8AE9BAE450874C60</key>
+		<key>C587A5F0EDB73F929C8569C72237B7EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE689CAE8DD656C32DF75630C09FA386</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB702BCCC7CE456ED85F7BD85585409C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF36DB9E1FB02DF7695FFCA422994736</key>
 		<dict>
 			<key>primary</key>
 			<true/>

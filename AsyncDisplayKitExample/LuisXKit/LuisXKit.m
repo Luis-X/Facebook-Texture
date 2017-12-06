@@ -12,8 +12,8 @@
 /**
  系统push
  
- @param navigationController
- @param viewController
+ @param navigationController 导航控制器
+ @param viewController       视图控制器
  @param hidesBottomBar       是否隐藏Tabbar
  @param animated             是否动画
  */
@@ -240,7 +240,7 @@
 /**
  NodeLabel
  
- @param addView 添加View
+ @param addNode 添加View
  */
 + (ASTextNode *)nodeTextNodeAddNode:(ASDisplayNode *)addNode{
     
@@ -256,7 +256,7 @@
 /**
  NodeView
 
- @param addView 添加View
+ @param addNode 添加View
  @param backgroundColor 背景颜色
  */
 + (ASDisplayNode *)nodeDisplayNodeAddNode:(ASDisplayNode *)addNode BackgroundColor:(UIColor *)backgroundColor{
@@ -271,7 +271,7 @@
 /**
  NodeButton(文本)
 
- @param addView 添加View
+ @param addNode 添加View
  @param title 标题
  @param titleColor 标题颜色
  @param font 字体
@@ -285,7 +285,7 @@
     ASButtonNode *buttonNode = [ASButtonNode new];
     buttonNode.backgroundColor = backgroundColor;
     if (title) {
-        [buttonNode setTitle:title withFont:font withColor:titleColor forState:ASControlStateNormal];
+        [buttonNode setTitle:title withFont:font withColor:titleColor forState:UIControlStateNormal];
     }
     buttonNode.contentVerticalAlignment = contentVerticalAlignment;
     buttonNode.contentHorizontalAlignment = contentHorizontalAlignment;
@@ -298,7 +298,7 @@
 /**
  NodeButton(图文)
 
- @param addView 添加View
+ @param addNode 添加View
  @param title 标题
  @param titleColor 标题颜色
  @param font 字体
@@ -314,10 +314,10 @@
     ASButtonNode *buttonNode = [ASButtonNode new];
     buttonNode.backgroundColor = backgroundColor;
     if (title) {
-        [buttonNode setTitle:title withFont:font withColor:titleColor forState:ASControlStateNormal];
+        [buttonNode setTitle:title withFont:font withColor:titleColor forState:UIControlStateNormal];
     }
     if (image) {
-        [buttonNode setImage:image forState:ASControlStateNormal];
+        [buttonNode setImage:image forState:UIControlStateNormal];
     }
     [buttonNode setImageAlignment:imageAlignment];
     buttonNode.contentVerticalAlignment = contentVerticalAlignment;
@@ -331,7 +331,7 @@
 /**
  NodeImageView(普通)
 
- @param addView 添加View
+ @param addNode 添加View
  @param clipsToBounds 边界裁剪
  @param contentMode 显示方式(尽量使用枚举名称)
  */
@@ -349,7 +349,7 @@
 /**
  NodeImageView(网络)
 
- @param addView 添加View
+ @param addNode 添加View
  @param clipsToBounds 边界裁剪
  @param contentMode 显示方式(尽量使用枚举名称)
  @param defaultImage 占位图

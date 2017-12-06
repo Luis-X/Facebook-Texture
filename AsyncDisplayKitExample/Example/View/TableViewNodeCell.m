@@ -131,7 +131,7 @@
 //标签
 - (void)addGoodsTimeTagNode:(NSString *)text{
     
-    ASButtonNode *buttonNode = [LuisXKit nodeButtonNodeAddNode:self Title:text TitleColor:[UIColor whiteColor] Font:FONT_PingFangSC_Regular(12) CornerRadius:25 / 2 BackgroundColor:[UIColor colorWithRed:0.97 green:0.15 blue:0.41 alpha:1.00] ContentVerticalAlignment:ASAlignmentCenter ContentHorizontalAlignment:ASAlignmentMiddle];
+    ASButtonNode *buttonNode = [LuisXKit nodeButtonNodeAddNode:self Title:text TitleColor:[UIColor whiteColor] Font:FONT_PingFangSC_Regular(12) CornerRadius:25 / 2 BackgroundColor:[UIColor colorWithRed:0.97 green:0.15 blue:0.41 alpha:1.00] ContentVerticalAlignment:ASVerticalAlignmentCenter ContentHorizontalAlignment:ASHorizontalAlignmentMiddle];
     buttonNode.style.minSize = CGSizeMake(90, 25);
     _goodsTimeTagNode = buttonNode;
     
@@ -181,13 +181,13 @@
     
     ASButtonNode *buttonNode = [ASButtonNode new];
     //buttonNode.backgroundColor = [UIColor orangeColor];
-    [buttonNode setImage:[UIImage imageNamed:@"home_share_normal"] forState:ASControlStateNormal];
-    [buttonNode setImage:[UIImage imageNamed:@"home_share_selected"] forState:ASControlStateHighlighted];
-    [buttonNode setBackgroundImage:[UIImage imageNamed:@"home_share_button"] forState:ASControlStateNormal];
-    [buttonNode setBackgroundImage:[UIImage imageNamed:@"home_share_button"] forState:ASControlStateHighlighted];
+    [buttonNode setImage:[UIImage imageNamed:@"home_share_normal"] forState:UIControlStateNormal];
+    [buttonNode setImage:[UIImage imageNamed:@"home_share_selected"] forState:UIControlStateHighlighted];
+    [buttonNode setBackgroundImage:[UIImage imageNamed:@"home_share_button"] forState:UIControlStateNormal];
+    [buttonNode setBackgroundImage:[UIImage imageNamed:@"home_share_button"] forState:UIControlStateHighlighted];
     buttonNode.imageAlignment = ASButtonNodeImageAlignmentBeginning;
-    buttonNode.contentVerticalAlignment = ASAlignmentCenter;
-    buttonNode.contentHorizontalAlignment = ASAlignmentMiddle;
+    buttonNode.contentVerticalAlignment = ASVerticalAlignmentCenter;
+    buttonNode.contentHorizontalAlignment = ASHorizontalAlignmentMiddle;
     [self addSubnode:buttonNode];
     buttonNode.style.preferredSize = CGSizeMake(43, 36);
     _shareButtonNode = buttonNode;
