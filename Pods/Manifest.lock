@@ -1,42 +1,42 @@
 PODS:
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
-  - PINCache (3.0.1-beta.5):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.5)
-    - PINCache/Core (= 3.0.1-beta.5)
-  - PINCache/Arc-exception-safe (3.0.1-beta.5):
+  - PINCache (3.0.1-beta.6):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
+    - PINCache/Core (= 3.0.1-beta.6)
+  - PINCache/Arc-exception-safe (3.0.1-beta.6):
     - PINCache/Core
-  - PINCache/Core (3.0.1-beta.5):
-    - PINOperation (= 1.0.3)
-  - PINOperation (1.0.3)
-  - PINRemoteImage/Core (3.0.0-beta.12):
+  - PINCache/Core (3.0.1-beta.6):
+    - PINOperation (~> 1.1.0)
+  - PINOperation (1.1)
+  - PINRemoteImage/Core (3.0.0-beta.13):
     - PINOperation
-  - PINRemoteImage/iOS (3.0.0-beta.12):
+  - PINRemoteImage/iOS (3.0.0-beta.13):
     - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.12):
-    - PINCache (= 3.0.1-beta.5)
+  - PINRemoteImage/PINCache (3.0.0-beta.13):
+    - PINCache (= 3.0.1-beta.6)
     - PINRemoteImage/Core
-  - Texture (2.5.1):
-    - Texture/PINRemoteImage (= 2.5.1)
-  - Texture/Core (2.5.1)
-  - Texture/PINRemoteImage (2.5.1):
-    - PINRemoteImage/iOS (= 3.0.0-beta.12)
+  - Texture (2.6):
+    - Texture/PINRemoteImage (= 2.6)
+  - Texture/Core (2.6)
+  - Texture/PINRemoteImage (2.6):
+    - PINRemoteImage/iOS (= 3.0.0-beta.13)
     - PINRemoteImage/PINCache
     - Texture/Core
 
 DEPENDENCIES:
   - Masonry (~> 1.0.1)
   - MBProgressHUD (~> 1.0.0)
-  - Texture
+  - Texture (~> 2.6)
 
 SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  PINCache: 98e7b1ef782824ad231ade51987c218b758c30d8
-  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
-  PINRemoteImage: 0cefe720c2612960bd360710efbd6c73a1991d5f
-  Texture: c3f06e344aa091667b7a56002e525cde674d021a
+  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
+  PINOperation: 7f042fa6df5b606deb4bd5997654cf7033d5be1d
+  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
 
-PODFILE CHECKSUM: dbcbf154a5cd4f2ed006d150646d2504d583884c
+PODFILE CHECKSUM: e3b9f377b282560efc85de1c477ebc6c071e44c8
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.4.0
